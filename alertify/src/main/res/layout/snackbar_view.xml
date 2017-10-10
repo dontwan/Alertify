@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#3b3b3b"
+    android:orientation="horizontal"
     android:padding="10dp">
 
     <TextView
@@ -9,6 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="This is a snackbar"
+        android:text="This is a Alertify"
+        android:textColor="#fff"
         android:textSize="20sp" />
 </LinearLayout>

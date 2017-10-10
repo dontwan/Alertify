@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b3b3b"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btnCustom"
-        android:text="Click me!"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Click me!" />
 
     <TextView
         android:id="@+id/tvCustom"
-        android:textSize="20sp"
-        android:textAlignment="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp" />
 </LinearLayout>

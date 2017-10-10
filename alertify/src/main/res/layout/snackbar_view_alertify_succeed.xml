@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:padding="10dp"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/notification_layout"
         android:backgroundTint="#8BC34A"
-        android:background="@drawable/notification_layout">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/ivIcon"
@@ -21,10 +21,10 @@
             app:srcCompat="@drawable/notification_succeed" />
 
         <LinearLayout
-            android:orientation="vertical"
-            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/tvTitle"
@@ -37,10 +37,10 @@
 
             <TextView
                 android:id="@+id/tvSubTitle"
-                android:text="This is a subtitle"
-                android:textColor="#fff"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="This is a subtitle"
+                android:textColor="#fff" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

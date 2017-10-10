@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 public class Alertify extends BaseTransientBottomBar<Alertify> {
 
-    private float x1,x2;
+    private float x1, x2;
     static final int MIN_DISTANCE = 150;
 
     private Alertify(@NonNull ViewGroup parent, @NonNull View content, @NonNull ContentViewCallback contentViewCallback) {
@@ -188,7 +188,7 @@ public class Alertify extends BaseTransientBottomBar<Alertify> {
     }
 
     public Alertify setSwipeDismiss(boolean enabled) {
-        if(enabled) {
+        if (enabled) {
             getView().setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
@@ -205,7 +205,7 @@ public class Alertify extends BaseTransientBottomBar<Alertify> {
                                     dismiss();
                                 } else {
                                     // Right to left swipe action
-                                    dismiss(); 
+                                    dismiss();
                                 }
                             }
                             break;
@@ -217,8 +217,8 @@ public class Alertify extends BaseTransientBottomBar<Alertify> {
         return this;
     }
 
-    public Alertify setOnTouchDismiss(boolean enabled){
-        if(enabled){
+    public Alertify setOnTouchDismiss(boolean enabled) {
+        if (enabled) {
             getView().setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {

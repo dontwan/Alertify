@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
     tools:context="dontwan.sample_alertify.MainActivity">
 
     <Button
-        android:id="@+id/alertifyNormal"
+        android:id="@+id/alertifySimple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Normal"
-        android:layout_alignParentBottom="true" />
+        android:text="Simple" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/alertifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/alertifyIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Icon" />
+
+    <Button
+        android:id="@+id/alertifyCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom" />
+
+    <Button
+        android:id="@+id/alertifyPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Position" />
+
+    <Button
+        android:id="@+id/alertifyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type" />
+
+</LinearLayout>
